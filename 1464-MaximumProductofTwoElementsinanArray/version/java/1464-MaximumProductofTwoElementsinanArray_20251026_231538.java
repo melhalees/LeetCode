@@ -1,0 +1,10 @@
+// Last updated: 10/26/2025, 11:15:38 PM
+class Solution {
+    public int maxProduct(int[] nums) {
+        int n = nums.length;
+
+        Arrays.sort(nums);
+
+        return (nums[n - 1] - 1) * (nums[n - 2] - 1);
+    }
+}
